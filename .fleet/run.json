@@ -1,0 +1,12 @@
+// ❯ scrapy crawl character -a l=zh-CN
+
+{
+    "configurations": [
+        {
+            "type": "python",
+            "name": "TW3K scrapy",
+            "file": "tw3k/main.py",
+            "arguments": [],
+        },
+    ]
+}
