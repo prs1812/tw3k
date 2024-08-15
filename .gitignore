@@ -12,6 +12,7 @@ env/
 # IDE files
 .idea/
 .vscode/
+.fleet/
 
 # Compiled Python files
 *.pyc
@@ -26,3 +27,5 @@ include/
 
 # Local configuration file
 config.ini
+
+
