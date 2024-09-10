@@ -16,6 +16,7 @@ class BuildingSpider(scrapy.Spider):
         self.link = f'https://www.honga.net/totalwar/three_kingdoms/{self.name}.php?%s'
         self.meta = {'l': 'en'}
 
+    # Read Playable Faction from file
     def start_requests(self):
         current_path = os.getcwd()
         # filePath = os.path.join(os.getcwd()+'/Data')
