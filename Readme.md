@@ -6,10 +6,11 @@ This project aims at get game infomation from [honga.net](https://www.honga.net/
 
 ## How to Use
 
+Additional parameter `l` is used as to choose which language to scrape. `scrapy crawl character -a l=zh-CN`
+
 ### Fleet Automation
 1. First, clone the project to your local machine.
-2. Run the command `python main.py` in the project root directory.  
-   ***Note*** : The project is built on **JetBrians Fleet**. Please use `run.json` to config `run & debug`
+2. Use `run.json` to config `run & debug`
 
 ### Scrapy CLI
 1. Make sure scrapy is installed.

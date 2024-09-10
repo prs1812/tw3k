@@ -64,12 +64,11 @@ class FactionSpider(scrapy.Spider):
         facMetaInfo = []
 
         for i in Selector(text=table).xpath('.//td'):
-            if i.xpath('./p/text()').get() == None:
+            if i.xpath('./p/text()').get() is None:
                 pass
             else:
                 facMetaInfo.append(i.xpath('./text()').get())
-        # print(facMetaInfo[6])
-        # pass
+
         facItem['GameItemID'] = query_params.get('f')[0]
         facItem['FactionName'] = {self.meta['l']: facMetaInfo[0]}
         facItem['FactionLeader'] = {self.meta['l']: facMetaInfo[1]}
